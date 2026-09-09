@@ -1,6 +1,6 @@
-<h1 align="center">EmboDi</h1>
+<h1 align="center">🎬 EmboDi</h1>
 
-<h3 align="center">Step into your imagination. Direct your own world with EmboDi.</h3>
+<h3 align="center">✨ Step into your imagination. Direct your own world with EmboDi.</h3>
 
 <p align="center">
   <a href="https://github.com/XulongT/EmboDi">
@@ -21,7 +21,11 @@
 
 https://github.com/user-attachments/assets/cd5e361a-cb87-4b28-af56-49258d5caf0b
 
-## Installation
+<p align="center">
+  <em>✨ Technical report and more features are coming soon! ✨</em>
+</p>
+
+## 📦 Installation
 
 Install **Node.js 22 or newer**, download and extract the source release, and run these commands in the directory containing `package.json` to start the [desktop app](http://localhost:8080/):
 
@@ -32,7 +36,7 @@ npm start
 
 Optional: run `npm test` for a local smoke check; it does not require an AI account.
 
-## API Setup
+## 🔌 API Setup
 
 The sample scene, manual editing, brushes and recording work without an AI account. Configure these services for AI-generated changes and voice input:
 
@@ -54,7 +58,7 @@ Check [the configured Agent models](http://localhost:8080/api/agents), then try 
 
 If you already have a signed-in Codex CLI on the server computer, you can select **Local Codex** instead of configuring a chat API.
 
-## Connect Meta Quest
+## 🥽 Connect Meta Quest
 
 Enable developer mode and install Android Platform Tools (`adb`). For the first connection, attach the headset by USB and accept the debugging prompt. With EmboDi running on your computer, choose either connection:
 
@@ -74,14 +78,14 @@ npm run quest -- QUEST_IP:5555
 
 Once connected over Wi-Fi, you can unplug USB. The script opens Quest Browser; choose **Open in Quest** on the page and follow the access prompts to enter the scene. The computer must stay on with EmboDi running. If multiple ADB devices are listed, pass the intended device serial as `npm run quest -- DEVICE_SERIAL`.
 
-## Usage
+## 🚀 Usage
 
 Start with the included sample room. Press **Y** to show or hide the menu in front of you; use the **right stick** to choose an option and **A** to confirm. Click the **right stick** (**V** on desktop) to switch between edit and explore modes. Start each example in **edit mode**, where objects can be selected and changed. Starting a rehearsal switches to explore mode automatically; return to edit mode before continuing to the next example.
 
 For voice instructions, hold **X**, release to review the transcript, then press **A / Enter** to send, **X** to speak again, or **B / Esc** to cancel. Review the generated proposal separately before applying it. Fixed interface text and object labels are English; voice input supports Chinese and English, and Agent replies follow your language.
 
 <details>
-<summary>Start from your own room and adjust its appearance</summary>
+<summary>🏠 Start from your own room and adjust its appearance</summary>
 
 1. Choose **Capture a new room** from the start or overview menu. On desktop, open **Capture guide and uploads → Upload room photos** and select at least **4** overlapping photos of the same room. JPEG and PNG are supported, up to **20 MB per original file**, with **no fixed photo-count limit**. Larger sets are processed in batches and take longer.
 2. Choose **Build room**, review the miniature blockout, then apply it and follow the entry prompts.
@@ -90,7 +94,7 @@ For voice instructions, hold **X**, release to review the transcript, then press
 
 </details>
 
-### 1. Create and Move an Object
+### 🧱 1. Create and Move an Object
 
 1. Choose **Create → Object**, point at a floor location, and press **A / Enter** to place it.
 2. Select the object and choose **Transform**. Move it with the **left stick**, rotate it with the **right stick**, or hold **left grip + left stick up/down** to change its height. Desktop equivalents are in the controls table below.
@@ -98,13 +102,13 @@ For voice instructions, hold **X**, release to review the transcript, then press
 
 You can also create by voice: finish the current tool, open **Y → Create → Other**, and say **“Create a door two metres in front of me.”** **Other** clears the current selection and starts listening automatically. Review and send the transcript, then review the generated object and confirm. Manual **Create → Object** placement uses the floor point you choose.
 
-### 2. Add a Custom Motion to an Actor
+### 🕺 2. Add a Custom Motion to an Actor
 
 1. Choose **Create → Actor**, point at the floor, and confirm placement of the included mannequin.
 2. With the actor selected, give a voice instruction such as “Have this actor wave its right hand for three seconds.” You can describe a simple pose or short motion.
 3. Review the result and choose **Apply changes**. Select the actor and press **left grip** (**Space** on desktop) to rehearse; press again to pause or resume.
 
-### 3. Draw with 2D and 3D Brushes
+### 🖌️ 3. Draw with 2D and 3D Brushes
 
 1. Select an object and choose **Interaction → Draw a path or region**. Choose **Draw ground path · 2D** for a line on the floor, or **Draw spatial path · 3D** for a curve in the air.
 2. Hold the **right trigger** (**left mouse button** on desktop) to draw, then release. **Brush settings** lets you adjust smoothing and, for 3D curves, the distance to the brush tip.
@@ -114,7 +118,7 @@ You can also create by voice: finish the current tool, open **Y → Create → O
 Rehearsal starts from the selected object and includes only its explicitly linked participants. Return to edit mode to select a different target or start a fresh rehearsal.
 
 <details>
-<summary>Try a surface flow effect with a floor-region trigger</summary>
+<summary>🌊 Try a surface flow effect with a floor-region trigger</summary>
 
 1. Select one editable primitive object, such as a box, sphere, cylinder or cone. Under **Interaction → Draw a path or region**, choose **Draw surface sources and trigger region**.
 2. Hold the **right trigger / left mouse button** to draw a small closed outline on its visible surface, returning near the starting point before releasing. The source appears pink. Draw a separate closed outline on the floor in front of it; this teal region is the trigger. Press **A / Enter** to finish both regions.
@@ -125,7 +129,7 @@ A door is not required. You can request changes to the flow's colour, amount, sp
 
 </details>
 
-### 4. Frame and Record
+### 🎥 4. Frame and Record
 
 1. Choose **Create → Camera**. Use **Transform** to position and rotate it, then confirm to save.
 2. With the camera selected, choose **Interaction → View this camera**, or say **“Preview this camera.”** To compare saved cameras, open the menu and choose **Next camera**. With the menu hidden, **A / Enter** brings the monitor back in front of you; **B / Esc** closes it. Close the monitor before adjusting the camera, save the new pose, then preview again.
@@ -135,7 +139,7 @@ A door is not required. You can request changes to the flow's colour, amount, sp
 
 Video export requires `ffmpeg` and `ffprobe` on PATH. Each take can be up to three minutes and exports virtual content as MP4, excluding the real camera view, interface and audio.
 
-## Controls
+## 🎮 Controls
 
 | Action | Quest | Desktop |
 | --- | --- | --- |
@@ -153,7 +157,7 @@ Video export requires `ffmpeg` and `ffprobe` on PATH. Each take can be up to thr
 | Draw with a brush | Hold right trigger | Hold left mouse button |
 | Rehearse / pause / resume selection | Left grip | Space |
 
-## User Data & Permissions
+## 🛡️ User Data & Permissions
 
 EmboDi runs a local server on your computer. The browser requests **XR/spatial-tracking** permission for immersive use, **microphone** access for voice input, and **camera** access when you capture room photos.
 
@@ -161,11 +165,11 @@ EmboDi runs a local server on your computer. The browser requests **XR/spatial-t
 - **AI services:** relevant prompts, scene information, sketches and reference photos are sent to your configured model service when needed. Voice clips are sent to your speech provider for transcription **before** you review the transcript. Optional cloud spoken replies send reply text to the selected speech service; browser speech follows your browser and operating-system settings. Selecting **Local Codex** uses a local CLI to contact its model service; it is not offline inference.
 - **Your choices:** use content you have permission to share, and review your providers' privacy, data-retention and billing terms.
 
-## Keep Your API Key Secure
+## 🔑 Keep Your API Key Secure
 
 Enter keys through **API settings**. EmboDi stores them on the server computer in `data/providers.json` and makes provider requests from the server. Saved keys are omitted from settings responses, but the file itself is **not encrypted**.
 
-### Critical Security Rules
+### 🔒 Critical Security Rules
 
 - Keep keys and local data out of Git, shared archives, screenshots and public logs. The release ignores `data/`, but ignore rules do not protect files already committed.
 - Keep the server local. If you adapt EmboDi for hosted use, add authentication and protected server-side secret storage; do not embed provider keys in frontend code.
