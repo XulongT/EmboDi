@@ -1,0 +1,15 @@
+import {execFile} from 'node:child_process';
+import {promisify} from 'node:util';
+import {readFile} from 'node:fs/promises';
+const exec=promisify(execFile),adb=process.env.EMBODI_ADB||process.env.VRBUILD_ADB||'adb',port=Number(process.env.PORT||8080);
+if(!Number.isInteger(port)||port<1||port>65535)throw Error('Invalid PORT');
+const health=await fetch(`http://127.0.0.1:${port}/api/health`).then(r=>r.json());
+const {version}=JSON.parse(await readFile(new URL('../package.json',import.meta.url),'utf8'));
+if(!health.ok||health.edition!=='open-source'||health.version!==version+'-basic')throw Error('Start this edition with npm start first');
+const run=args=>exec(adb,args,{timeout:15000,maxBuffer:1024*1024});
+const devices=(await run(['devices'])).stdout.split(/\r?\n/).map(l=>l.trim().split(/\s+/)).filter(p=>p[1]==='device').map(p=>p[0]);
+const serial=process.argv[2]||(devices.length===1?devices[0]:null);
+if(!serial||!devices.includes(serial))throw Error('Connect and authorize one headset, or provide its device serial');
+await run(['-s',serial,'reverse',`tcp:${port}`,`tcp:${port}`]);
+await run(['-s',serial,'shell','am','start','-a','android.intent.action.VIEW','-d',`http://localhost:${port}/?mode=authoring`,'-p','com.oculus.browser']);
+console.log(`Opened EmboDi on the selected headset (port ${port}).`);
