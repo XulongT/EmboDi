@@ -1,0 +1,12 @@
+{
+  "en": {
+    "editRequired": "Enter Edit mode before changing cameras or lights. Close the monitor before editing.",
+    "dwellTrackPreview": "{0}: enter the floor region and dwell for {1} seconds to follow the saved path. Leaving resets the timer; once per rehearsal. {2}A Save, B Discard.",
+    "closureRepaired": "The closing overshoot was repaired; review the highlighted region. "
+  },
+  "zh": {
+    "editRequired": "\u8fd9\u9879\u64cd\u4f5c\u9700\u8981\u7f16\u8f91\u6a21\u5f0f\u3002\u8bf7\u5148\u5173\u95ed\u76d1\u89c6\u5c4f\u5e76\u8fdb\u5165\u7f16\u8f91\uff0c\u518d\u8c03\u6574\u76f8\u673a\u6216\u706f\u5149\u3002",
+    "dwellTrackPreview": "{0}\uff1a\u7528\u6237\u8fdb\u5165\u5730\u9762\u5708\u8fde\u7eed\u505c\u7559 {1} \u79d2\u540e\uff0c\u6cbf\u5df2\u7ed1\u5b9a\u8def\u5f84\u79fb\u52a8\u3002\u79bb\u5f00\u5708\u5185\u5219\u91cd\u65b0\u8ba1\u65f6\uff0c\u6bcf\u6b21\u9884\u6f14\u89e6\u53d1\u4e00\u6b21\u3002{2}A \u4fdd\u5b58\uff0cB \u653e\u5f03\u3002",
+    "closureRepaired": "\u6536\u7b14\u7684\u5c0f\u56de\u7ed5\u5df2\u4fee\u6574\uff0c\u8bf7\u6838\u5bf9\u9ad8\u4eae\u8303\u56f4\u3002"
+  }
+}

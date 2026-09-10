@@ -1,3 +1,4 @@
+import zh from "./fixtures/zh.json" with {type: "json"};
 import assert from 'node:assert/strict';
 import http from 'node:http';
 import {spawn} from 'node:child_process';
@@ -92,10 +93,10 @@ try{
   assert(!state.scene.actors.some(a=>a.id===actor.id));assert.equal(state.scene.objects.find(o=>o.id==='check-camera').aimTargetId,undefined);assert.equal(state.scene.objects.find(o=>o.id==='check-light').track.orientation,'fixed');assert.equal(state.scene.objects.find(o=>o.id==='check-light').track.targetId,null);
   state=await api('/api/undo',{revision:state.revision,authoringSession:session});assert.deepEqual(state.scene,before);
   const savedConfig=await api('/api/config');await stop();await start();assert.deepEqual(await api('/api/config'),savedConfig);assert.deepEqual((await api('/api/state')).scene,before);
-  await stop();const legacy=JSON.parse(await readFile(join(data,'scene.json'),'utf8'));legacy.scene.objects.find(o=>o.id===owner.id).name='地面分区 4';await writeFile(join(data,'scene.json'),JSON.stringify(legacy));await start();
+  await stop();const legacy=JSON.parse(await readFile(join(data,'scene.json'),'utf8'));legacy.scene.objects.find(o=>o.id===owner.id).name=zh.legacyFloorLabel;await writeFile(join(data,'scene.json'),JSON.stringify(legacy));await start();
   const selected=await api('/api/conversation/select',{revision:legacy.revision,ids:[owner.id],conversationId:'english-label-check'});
   assert.match(selected.messages.at(-1).content,/Selected Floor (section|area) 4/);assert(!/\p{Script=Han}/u.test(selected.messages.at(-1).content));
-  assert.equal((await api('/api/state')).scene.objects.find(o=>o.id===owner.id).name,'地面分区 4');
+  assert.equal((await api('/api/state')).scene.objects.find(o=>o.id===owner.id).name,zh.legacyFloorLabel);
   await api('/api/config',{analysis:{clearKey:true}});assert.equal((await api('/api/config')).analysis.hasKey,false);
   console.log('PASS: custom data, CLI paths, API configuration, custom speech protocols, object-surface flow, English labels for saved scenes, concurrency, target cleanup, undo and restart. Local stubs only.');
 }finally{for(const release of pending)release();await stop();mock.closeAllConnections();await new Promise(r=>mock.close(r));await rm(scratch,{recursive:true,force:true});}

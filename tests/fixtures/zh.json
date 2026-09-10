@@ -1,0 +1,97 @@
+{
+  "waveRequest": "\u6325\u624b",
+  "walkAndWaveInstruction": "\u6cbf\u7ebf\u884c\u8d70\u5e76\u6325\u624b",
+  "previewReply": "\u8bf7\u67e5\u770b\u9884\u89c8\u3002",
+  "walkAndWaveReply": "\u6cbf\u4fdd\u5b58\u7684\u66f2\u7ebf\u884c\u8d70\u5e76\u6325\u624b\uff0c\u8bf7\u9884\u89c8\u3002",
+  "actorWalkAndWaveRequest": "\u8ba9\u8fd9\u4e2a\u4eba\u6cbf\u7ebf\u884c\u8d70\u5e76\u6325\u624b",
+  "ambiguousSketchReply": "\u8fd9\u6761\u7ebf\u8868\u793a\u79fb\u52a8\u8def\u7ebf\u8fd8\u662f\u533a\u57df\uff1f",
+  "interpretedWalkAndWave": "\u6cbf\u73b0\u6709\u8def\u5f84\u8d70\u5e76\u6325\u53f3\u624b",
+  "pathRecognizedReply": "\u8def\u5f84\u5df2\u8bc6\u522b\u3002",
+  "pathRecommendationReply": "\u53ef\u4ee5\u628a\u8def\u5f84\u7ec8\u70b9\u653e\u5728\u95e8\u524d\uff0c\u4fbf\u4e8e\u89c2\u5bdf\u3002",
+  "colorPreviewReply": "\u989c\u8272\u5df2\u51c6\u5907\u597d\u3002",
+  "lowerArmsRequest": "\u653e\u4e0b\u53cc\u81c2",
+  "curveRequiredReply": "\u8bf7\u5148\u753b\u66f2\u7ebf",
+  "boxFlowRequest": "\u8ba9\u8fd9\u4e2a\u7acb\u65b9\u4f53\u6ea2\u51fa\u8840\u6c34",
+  "lightLeakRequest": "\u8ba9\u8fd9\u76cf\u706f\u6f0f\u6c34",
+  "reduceBottomFlowRequest": "\u53ea\u628a\u5e95\u90e8\u51fa\u6d41\u91cf\u51cf\u534a",
+  "objectDwellFlowRequest": "\u8ba9\u8fd9\u4e2a\u7269\u4f53\u5728\u6211\u7ad9\u5728\u5708\u91cc\u4e94\u79d2\u540e\u6ea2\u51fa\u8840\u6c34",
+  "legacyFloorLabel": "\u5730\u9762\u5206\u533a 4",
+  "transformCases": [
+    {
+      "input": "\u5411\u5de6\u79fb\u52a8\u4e24\u7c73",
+      "english": "move left 2 meters",
+      "type": "translate",
+      "offset": [
+        -2,
+        0,
+        0
+      ]
+    },
+    {
+      "input": "\u5411\u4e0a\u79fb\u52a8\u534a\u7c73",
+      "english": "raise 0.5 meters",
+      "type": "translate",
+      "offset": [
+        0,
+        0.5,
+        0
+      ]
+    },
+    {
+      "input": "\u5411\u53f3\u79fb\u52a8\u4e09\u5341\u5398\u7c73",
+      "english": "move right 30 cm",
+      "type": "translate",
+      "offset": [
+        0.3,
+        0,
+        0
+      ]
+    },
+    {
+      "input": "\u5411\u53f3\u65cb\u8f6c\u4e5d\u5341\u5ea6",
+      "english": "rotate right 90 degrees",
+      "type": "rotate",
+      "degrees": -90
+    }
+  ],
+  "cameraCases": [
+    {
+      "input": "\u53ec\u5524 Camera Agent\uff01",
+      "action": "preview"
+    },
+    {
+      "input": "\u590d\u4f4d\u9884\u89c8\u7a97\u53e3\u3002",
+      "action": "recenter"
+    },
+    {
+      "input": "\u5173\u95ed\u76d1\u89c6\u5c4f",
+      "action": "close"
+    }
+  ],
+  "specialistCases": [
+    {
+      "input": "\u8ba9\u76f8\u673a\u6cbf\u66f2\u7ebf\u8fd0\u955c",
+      "english": "move the camera along the curve",
+      "route": "camera"
+    },
+    {
+      "input": "\u8ba9\u706f\u5149\u53d8\u4eae",
+      "english": "make the light brighter",
+      "route": "lighting"
+    },
+    {
+      "input": "\u8ba9\u8fd9\u4e2a\u7269\u4f53\u6cbf\u66f2\u7ebf\u79fb\u52a8",
+      "english": "move this object along the path",
+      "route": "object-motion"
+    },
+    {
+      "input": "\u8ba9\u7269\u4f53\u6ea2\u51fa\u8840\u6c34",
+      "english": "let blood flow from this object",
+      "route": null
+    }
+  ],
+  "delayRequest": "\u5ef6\u8fdf\u4e94\u79d2",
+  "motionNumberRequest": "\u4f7f\u7528\u7b2c\u4e09\u4e2a\u52a8\u4f5c",
+  "legacyGroundHint": "\u6309\u4f4f\u53f3\u6273\u673a\u5728\u5730\u9762\u753b\u7ebf\uff0c\u677e\u5f00\u7ed3\u675f\u3002",
+  "legacyScanTitle": "\u623f\u95f4 \u00b7 \u626b\u63cf\u7ed3\u6784\u9884\u89c8"
+}

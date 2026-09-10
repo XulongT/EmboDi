@@ -9,10 +9,14 @@
   },
   "scripts": {
     "start": "node server.mjs",
+    "build": "node scripts/build.mjs",
     "quest": "node scripts/quest.mjs",
-    "test": "node scripts/smoke.mjs"
+    "test": "node scripts/test.mjs"
   },
   "dependencies": {
     "three": "0.185.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
   }
 }

@@ -1,0 +1,470 @@
+{
+  "authoring.hideReply": {
+    "source": "^(?:\u6536\u8d77|\u9690\u85cf|\u5173\u95ed)(?:\u5bf9\u8bdd|\u56de\u590d|\u5bf9\u8bdd\u7a97\u53e3|\u5bf9\u8bdd\u6846)[\u3002\uff01! ]*$",
+    "flags": ""
+  },
+  "authoring.confirmChanges": {
+    "source": "^(\u4fdd\u5b58|\u786e\u8ba4|\u5e94\u7528)[\u3002\uff01! ]*$",
+    "flags": ""
+  },
+  "authoring.cancelChanges": {
+    "source": "^(\u53d6\u6d88|\u653e\u5f03)[\u3002\uff01! ]*$",
+    "flags": ""
+  },
+  "authoring.applyPreview": {
+    "source": "^(\u786e\u8ba4|\u5e94\u7528|\u5e94\u7528\u4fee\u6539|\u786e\u8ba4\u4fee\u6539|\u6ca1\u9519|yes|apply)$",
+    "flags": "i"
+  },
+  "authoring.discardPreview": {
+    "source": "^(\u653e\u5f03|\u53d6\u6d88|\u53d6\u6d88\u9884\u89c8|discard|cancel)$",
+    "flags": "i"
+  },
+  "authoring.stopOperation": {
+    "source": "^(\u505c\u6b62|\u505c\u4e0b|\u6682\u505c|stop|cancel)$",
+    "flags": "i"
+  },
+  "authoring.rehearseEffect": {
+    "source": "^(?:\u91cd\u65b0|\u5f00\u59cb|\u518d)?(?:\u9884\u6f14|\u6d4b\u8bd5)(?:\u4e00\u4e0b)?(?:\u4ea4\u4e92|\u6d2a\u6c34|\u8840\u6c34)$",
+    "flags": "i"
+  },
+  "authoring.clearRegions": {
+    "source": "^(\u6e05\u7a7a|\u91cd\u753b)(\u8349\u56fe|\u533a\u57df|\u6240\u6709\u533a\u57df)$",
+    "flags": ""
+  },
+  "authoring.undoRegion": {
+    "source": "^(\u64a4\u56de|\u64a4\u9500)(\u4e0a\u4e00\u5708|\u4e0a\u4e00\u5757\u533a\u57df)$",
+    "flags": ""
+  },
+  "authoring.cancelSketch": {
+    "source": "^\u53d6\u6d88(\u7ed8\u5236|\u8349\u56fe)$",
+    "flags": ""
+  },
+  "authoring.saveSketch": {
+    "source": "^(\u5b8c\u6210|\u4fdd\u5b58)(\u8349\u56fe|\u533a\u57df)$",
+    "flags": ""
+  },
+  "door.openSuffix": {
+    "source": "^(?:\u8bf7|\u5e2e\u6211)?(?:\u628a)?(?:\u8fd9\u6247|\u8fd9\u4e2a|\u9009\u4e2d\u7684)?\u95e8(?:\u6253\u5f00|\u5f00\u542f)$",
+    "flags": ""
+  },
+  "door.openPrefix": {
+    "source": "^(?:\u8bf7|\u5e2e\u6211)?(?:\u6253\u5f00|\u5f00\u542f)(?:\u8fd9\u6247|\u8fd9\u4e2a|\u9009\u4e2d\u7684)?\u95e8$",
+    "flags": ""
+  },
+  "door.closeSuffix": {
+    "source": "^(?:\u8bf7|\u5e2e\u6211)?(?:\u628a)?(?:\u8fd9\u6247|\u8fd9\u4e2a|\u9009\u4e2d\u7684)?\u95e8(?:\u5173\u95ed|\u5173\u4e0a)$",
+    "flags": ""
+  },
+  "door.closePrefix": {
+    "source": "^(?:\u8bf7|\u5e2e\u6211)?(?:\u5173\u95ed|\u5173\u4e0a)(?:\u8fd9\u6247|\u8fd9\u4e2a|\u9009\u4e2d\u7684)?\u95e8$",
+    "flags": ""
+  },
+  "authoring.motionRequest": {
+    "source": "(\u52a8\u4f5c|\u59ff\u6001|\u624b\u81c2|\u80f3\u818a|\u66f2\u7ebf|motion|pose)",
+    "flags": "i"
+  },
+  "legacy.prepareDoorCast": {
+    "source": "^(?:\u914d\u7f6e|\u51c6\u5907)(?:\u4e94|5)\u4eba\u5f00\u95e8\u6f14\u51fa$",
+    "flags": ""
+  },
+  "legacy.resetDoorPerformance": {
+    "source": "^(\u5173\u95e8\u590d\u4f4d|\u91cd\u7f6e\u5f00\u95e8\u6f14\u51fa|\u6f14\u51fa\u590d\u4f4d)$",
+    "flags": ""
+  },
+  "legacy.openDoor": {
+    "source": "^(\u5f00\u95e8|open the door)$",
+    "flags": "i"
+  },
+  "legacy.stopPerformance": {
+    "source": "^(stop|\u6682\u505c|\u505c\u4e0b|\u505c\u6b62)$",
+    "flags": "i"
+  },
+  "legacy.resumePerformance": {
+    "source": "^(\u7ee7\u7eed|\u7ee7\u7eed\u64ad\u653e|resume)$",
+    "flags": "i"
+  },
+  "legacy.confirmPreview": {
+    "source": "^(\u6ca1\u9519|\u786e\u8ba4|\u5e94\u7528\u4fee\u6539|\u786e\u8ba4\u4fee\u6539|yes)[\u3002\uff01!\\s]*$",
+    "flags": "i"
+  },
+  "legacy.discardPreview": {
+    "source": "^(\u653e\u5f03|\u53d6\u6d88\u9884\u89c8)[\u3002\uff01!\\s]*$",
+    "flags": ""
+  },
+  "legacy.actorRequest": {
+    "source": "(\u6f14\u5458|\u8fd9\u4e2a\u4eba|\u4ed6|\u89d2\u8272|\u50f5\u5c38|\u4e27\u5c38|\u52a8\u4f5c)",
+    "flags": ""
+  },
+  "punctuation.app.1": {
+    "source": "[\u3002\uff01!\\s]+$",
+    "flags": "g"
+  },
+  "punctuation.app.2": {
+    "source": "[\u3002\uff01!]",
+    "flags": "g"
+  },
+  "transform.faster": {
+    "source": "\u52a0\u5feb|\u592a\u6162|\u5feb\u4e00\u70b9|faster",
+    "flags": "i"
+  },
+  "transform.slower": {
+    "source": "\u51cf\u6162|\u592a\u5feb|\u6162\u4e00\u70b9|slower",
+    "flags": "i"
+  },
+  "transform.verticalRequest": {
+    "source": "\u62ac\u9ad8|\u5347\u9ad8|\u964d\u4f4e|\u5f80\u4e0a|\u5f80\u4e0b|\\braise\\b|\\blower\\b|\\bmove (?:up|down)\\b",
+    "flags": "i"
+  },
+  "transform.meters": {
+    "source": "\u7c73|\\bmet(?:er|re)s?\\b|\\bm\\b",
+    "flags": "i"
+  },
+  "transform.centimeters": {
+    "source": "\u5398\u7c73|centimet(?:er|re)|\\bcm\\b",
+    "flags": "i"
+  },
+  "transform.lower": {
+    "source": "\u964d\u4f4e|\u5f80\u4e0b|\\blower\\b|\\bmove down\\b",
+    "flags": "i"
+  },
+  "preview.stop": {
+    "source": "^(?:\u6682\u505c|\u505c\u6b62|\u505c\u4e0b)(?:\u9884\u6f14|\u9884\u89c8|\u64ad\u653e)?$|^(?:pause|stop)$",
+    "flags": "i"
+  },
+  "preview.play": {
+    "source": "^(?:\u5f00\u59cb|\u5f00\u542f|\u7ee7\u7eed|\u91cd\u64ad|\u91cd\u65b0|\u91cd\u65b0\u64ad\u653e|\u64ad\u653e)?(?:\u9884\u6f14|\u9884\u89c8|\u64ad\u653e|\u52a8\u4f5c)(?:\u5f53\u524d\u5bf9\u8c61|\u8fd9\u4e2a\u5bf9\u8c61|\u4ea4\u4e92|\u6d2a\u6c34|\u8840\u6c34)?$|^(?:play|resume|replay)$",
+    "flags": "i"
+  },
+  "preview.restart": {
+    "source": "\u91cd\u64ad|\u91cd\u65b0|replay",
+    "flags": "i"
+  },
+  "punctuation.production-studio.1": {
+    "source": "[\u3002\uff01!\\s]+$",
+    "flags": "g"
+  },
+  "camera.selfieDevice": {
+    "source": "avatar|selfie|\u865a\u62df\u5f62\u8c61",
+    "flags": "i"
+  },
+  "camera.environmentDevice": {
+    "source": "passthrough|environment|rear|back|left|right|\u5934\u663e|\u540e\u7f6e",
+    "flags": "i"
+  },
+  "actor.delaySeconds": {
+    "source": "(?:\u7b2c|\u540e|\u7b49|\u5ef6\u8fdf|\u665a)?\\s*(\\d+(?:\\.\\d+)?|[\u96f6\u4e00\u4e8c\u4e24\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341])\\s*\u79d2",
+    "flags": ""
+  },
+  "actor.groupStyle": {
+    "source": "^(?:\u8bf7|\u5e2e\u6211)?(?:\u8ba9)?(?:\u4ed6\u4eec|\u8fd9\u4e9b\u4eba|\u6240\u6709\u6f14\u5458|\u5168\u90e8\u6f14\u5458|\u8fd9\u51e0\u4e2a\u4eba)(?:\u90fd)?(?:\u4f7f\u7528|\u64ad\u653e|\u6362\u6210|\u505a)(\u4e27\u5c38|\u50f5\u5c38|\u53ef\u7231)(?:\u4e00\u6837\u7684)?(?:\u52a8\u753b|\u52a8\u4f5c)$",
+    "flags": ""
+  },
+  "actor.stop": {
+    "source": "^(stop|\u6682\u505c|\u505c|\u505c\u4e0b|\u505c\u6b62|\u505c\u6b62\u52a8\u4f5c|\u6682\u505c\u52a8\u4f5c)$",
+    "flags": "i"
+  },
+  "actor.start": {
+    "source": "^(\u5f00\u59cb|\u5f00\u6f14|\u5f00\u59cb\u8868\u6f14|\u64ad\u653e\u52a8\u4f5c|\u64ad\u653e|\u91cd\u653e|\u91cd\u65b0\u5f00\u59cb|action|start|replay)$",
+    "flags": "i"
+  },
+  "actor.resume": {
+    "source": "^(\u7ee7\u7eed|\u7ee7\u7eed\u64ad\u653e|\u7ee7\u7eed\u8868\u6f14|resume)$",
+    "flags": "i"
+  },
+  "actor.edit": {
+    "source": "^(\u8fd4\u56de\u7f16\u6392|\u7f16\u8f91\u6f14\u5458|\u56de\u5230\u7f16\u6392)$",
+    "flags": ""
+  },
+  "actor.saveScene": {
+    "source": "^(\u4fdd\u5b58|\u4fdd\u5b58\u573a\u666f|\u4fdd\u5b58\u5f53\u524d\u573a\u666f)$",
+    "flags": ""
+  },
+  "actor.style": {
+    "source": "^(?:(?:\u8bf7|\u5e2e\u6211|\u6211\u4eec)\\s*)?(?:(?:\u628a|\u8ba9)\\s*(?:\u6240\u6709|\u8fd9|\u8fd9\u4e94|\u4e94|5)?\\s*(?:\u4e2a\u4eba|\u4f4d\u6f14\u5458|\u4e2a\u6f14\u5458|\u6f14\u5458|\u4eba)(?:\u7684\u52a8\u4f5c)?\\s*)?(?:(?:\u5207\u6362\u5230|\u5207\u6362\u6210|\u5207\u6362\u4e3a|\u5207\u6362\u56de|\u5207\u6362|\u6362\u4e00\u4e2a|\u6362\u6210|\u6362\u56de|\u6539\u6210|\u6539\u4e3a|\u53d8\u6210|\u4f7f\u7528|\u6062\u590d)\\s*)?(\u53ef\u7231|\u751f\u65e5|\u4e27\u5c38|\u50f5\u5c38|\u6050\u6016)\\s*(?:\u98ce\u683c|\u6a21\u5f0f|\u52a8\u4f5c)(?:\u5427)?$",
+    "flags": ""
+  },
+  "actor.subject": {
+    "source": "(\u6f14\u5458|\u4eba|\u50f5\u5c38|\u89d2\u8272)",
+    "flags": ""
+  },
+  "actor.clearMotion": {
+    "source": "^(\u53d6\u6d88\u52a8\u4f5c|\u6e05\u9664\u52a8\u4f5c|\u79fb\u9664\u52a8\u4f5c)$",
+    "flags": ""
+  },
+  "actor.numberedMotion": {
+    "source": "(?:\u4f7f\u7528|\u6307\u5b9a|\u7ed1\u5b9a|\u6362\u6210|\u6362\u4e3a|\u6539\u6210|\u7528)\\s*\u7b2c?\\s*([1-7\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03])\\s*(?:\u4e2a|\u53f7|\u6bb5)?\\s*(?:\u4e27\u5c38|\u50f5\u5c38)?\u52a8\u4f5c",
+    "flags": ""
+  },
+  "actor.motionSubject": {
+    "source": "(\u4ed6|\u6f14\u5458|\u4eba|\u50f5\u5c38|\u89d2\u8272)",
+    "flags": ""
+  },
+  "actor.generatedMotion": {
+    "source": "(\u6325\u624b|\u8df3|\u821e|\u8dd1|\u5750\u4e0b|\u884c\u8d70|\u8d70\u8def|\u8d70\u8fc7\u6765|\u8d70\u8fc7\u53bb|\u7ad9\u7acb|\u8e72|\u8eba|\u722c|\u6e38\u6cf3|\u98de\u8d77\u6765|\u8f6c\u8eab|\u6253\u62f3)",
+    "flags": ""
+  },
+  "actor.spatialSubject": {
+    "source": "(\u4ed6|\u6f14\u5458|\u8fd9\u4e2a\u4eba|\u50f5\u5c38|\u89d2\u8272)",
+    "flags": ""
+  },
+  "actor.moveVerb": {
+    "source": "(\u79fb|\u632a|\u653e\u5230|\u6362\u5230)",
+    "flags": ""
+  },
+  "actor.here": {
+    "source": "(\u8fd9\u91cc|\u8fd9\u513f|\u8fd9\u8fb9)",
+    "flags": ""
+  },
+  "actor.createVerb": {
+    "source": "(\u751f\u6210|\u521b\u5efa|\u653e|\u52a0|\u5b89\u6392)",
+    "flags": ""
+  },
+  "legacy.lungeMotion": {
+    "source": "(\u524d\u6251|\u50f5\u5c38\u52a8\u4f5c)",
+    "flags": ""
+  },
+  "legacy.motionAssignmentSubject": {
+    "source": "(\u4ed6|\u6f14\u5458|\u8fd9\u4e2a\u4eba|\u50f5\u5c38|\u89d2\u8272|\u4f7f\u7528|\u7ed1\u5b9a|\u6362\u6210)",
+    "flags": ""
+  },
+  "legacy.assignLungeMotion": {
+    "source": "^(\u4f7f\u7528|\u7ed1\u5b9a|\u6362\u6210)(\u8fd9\u4e2a|\u50f5\u5c38\u524d\u6251)\u52a8\u4f5c$",
+    "flags": ""
+  },
+  "actor.delayVerb": {
+    "source": "(\u51fa\u73b0|\u51fa\u573a|\u5f00\u59cb|\u665a|\u5ef6\u8fdf)",
+    "flags": ""
+  },
+  "actor.faceViewer": {
+    "source": "(\u9762\u5411\u6211|\u671d\u5411\u6211|\u770b\u5411\u6211|\u9762\u5bf9\u6211)",
+    "flags": ""
+  },
+  "actor.removeVerb": {
+    "source": "(\u5220\u9664|\u79fb\u9664)",
+    "flags": ""
+  },
+  "punctuation.actors.1": {
+    "source": "[\u3002\uff01!\uff0c,\uff1f?]",
+    "flags": "g"
+  },
+  "punctuation.actors.2": {
+    "source": "[?\uff1f]",
+    "flags": ""
+  },
+  "punctuation.actors.3": {
+    "source": "[?\uff1f]",
+    "flags": ""
+  },
+  "scene.boundaryWall": {
+    "source": "wall|\u5899|capture-boundary",
+    "flags": "i"
+  },
+  "category.seating": {
+    "source": "chair|seat|sofa|\u6905|\u5ea7|\u6c99\u53d1",
+    "flags": "i"
+  },
+  "category.table": {
+    "source": "table|desk|bench|\u684c|\u5de5\u4f5c\u53f0|\u652f\u6491\u677f",
+    "flags": "i"
+  },
+  "category.equipment": {
+    "source": "monitor|screen|equipment|instrument|server|\u663e\u793a\u5668|\u5c4f\u5e55|\u8bbe\u5907|\u4eea\u5668|\u670d\u52a1\u5668",
+    "flags": "i"
+  },
+  "category.cabinet": {
+    "source": "cabinet|\u67dc",
+    "flags": "i"
+  },
+  "category.storage": {
+    "source": "cabinet|bookcase|storage|shelf|rack|\u67dc|\u4e66\u67b6|\u8d27\u67b6",
+    "flags": "i"
+  },
+  "category.structure": {
+    "source": "ground|floor|wall|ceiling|column|\u5730\u9762|\u5730\u677f|\u5899|\u5929\u82b1|\u9876\u677f|\u7acb\u67f1|\u65b9\u67f1",
+    "flags": "i"
+  },
+  "category.workstation": {
+    "source": "workstation|\u5de5\u4f4d",
+    "flags": "i"
+  },
+  "category.ceiling": {
+    "source": "\u5929\u82b1\u677f|\u9876\u677f",
+    "flags": ""
+  },
+  "category.floor": {
+    "source": "floor|\u5730\u677f|\u5730\u9762",
+    "flags": "i"
+  },
+  "category.wall": {
+    "source": "wall|\u5899",
+    "flags": "i"
+  },
+  "scene.floor": {
+    "source": "floor|\u5730\u9762",
+    "flags": "i"
+  },
+  "scene.ceiling": {
+    "source": "ceiling|\u5929\u82b1",
+    "flags": "i"
+  },
+  "category.wall.caseSensitive": {
+    "source": "wall|\u5899",
+    "flags": ""
+  },
+  "scene.scanTitleSuffix": {
+    "source": "(?:\u626b\u63cf\u7ed3\u6784\u9884\u89c8|Scan structure preview)$",
+    "flags": "i"
+  },
+  "scene.scanNamePrefix": {
+    "source": "^(?:\u626b\u63cf|Scanned\\s+)",
+    "flags": "i"
+  },
+  "transform.request": {
+    "source": "(\u79fb\u52a8|\u632a|\u5e73\u79fb|\u79fb\u5230|\u79fb\u5411|\u79fb[\u4e00\u534a\u4e24\\d]|\u8f6c\u5411|\u9762\u5411|\u671d\u5411|\u65cb\u8f6c|\u8f6c.{0,8}\u5ea6|\u5347\u9ad8|\u62ac\u9ad8|\u964d\u4f4e|\u964d\u4e0b|\u5f80.{0,3}[\u5de6\u53f3\u524d\u540e\u4e0a\u4e0b]|\u5411.{0,3}[\u5de6\u53f3\u524d\u540e\u4e0a\u4e0b]|\\b(move|translate|rotate|face|raise|lower)\\b)",
+    "flags": "i"
+  },
+  "transform.ambiguousRequest": {
+    "source": "\u4e0d|\u522b|\u559c\u6b22|\u504f\u597d|\u5982\u679c|\u5047\u5982|\u662f\u5426|\u5417|[?\uff1f]|\u7136\u540e|\u5e76|\u540c\u65f6|\u518d|\u3001|\uff0c|,|\u548c|\u53ca",
+    "flags": ""
+  },
+  "transform.placeHere": {
+    "source": "\u79fb\u5230.*(\u8fd9\u91cc|\u8fd9\u513f|\u6307\u7684|\u6307\u5411)|move.*here",
+    "flags": "i"
+  },
+  "transform.faceViewer": {
+    "source": "\u9762\u5411\u6211|\u671d\u5411\u6211|face me",
+    "flags": "i"
+  },
+  "transform.quantity": {
+    "source": "(\\d+(?:\\.\\d+)?|\u4e5d\u5341|\u56db\u5341\u4e94|\u4e09\u5341|\u5341\u4e94|\u534a|\u4e00|\u4e24|\u4e8c|\u4e09|\u56db|\u4e94|\u516d|\u4e03|\u516b|\u4e5d|\u5341)\\s*(\u5398\u7c73|\u7c73|\u5ea6|cm|meters?|metres?|degrees?)",
+    "flags": "gi"
+  },
+  "transform.degrees": {
+    "source": "\u5ea6|degree",
+    "flags": "i"
+  },
+  "transform.rotation": {
+    "source": "\u8f6c|rotate",
+    "flags": "i"
+  },
+  "transform.horizontalDirection": {
+    "source": "[\u5de6\u53f3]|left|right",
+    "flags": "i"
+  },
+  "transform.right": {
+    "source": "\u53f3|right",
+    "flags": "i"
+  },
+  "transform.distanceUnit": {
+    "source": "\u7c73|cm|meter|metre",
+    "flags": "i"
+  },
+  "transform.centimeterQuantity": {
+    "source": "\u5398\u7c73|cm",
+    "flags": "i"
+  },
+  "transform.objectFrame": {
+    "source": "\u81ea\u5df1|\u81ea\u8eab|\u672c\u8eab",
+    "flags": ""
+  },
+  "transform.left": {
+    "source": "\u5de6|left",
+    "flags": "i"
+  },
+  "transform.up": {
+    "source": "\u5347|\u62ac\u9ad8|\u4e0a|raise",
+    "flags": "i"
+  },
+  "transform.down": {
+    "source": "\u964d|\u4e0b|lower",
+    "flags": "i"
+  },
+  "transform.forward": {
+    "source": "\u524d|forward",
+    "flags": "i"
+  },
+  "transform.backward": {
+    "source": "\u540e|backward",
+    "flags": "i"
+  },
+  "studio.cancel": {
+    "source": "^(stop|cancel|\u505c\u6b62|\u53d6\u6d88)$",
+    "flags": "i"
+  },
+  "camera.summon": {
+    "source": "^(?:(?:\u53ec\u5524|\u547c\u53eb|\u6253\u5f00|\u542f\u52a8|call|open))?cameraagent$",
+    "flags": ""
+  },
+  "camera.summonPrefix": {
+    "source": "^(?:\u8bf7)?(?:(?:\u53ec\u5524|\u547c\u53eb|\u6253\u5f00|\u542f\u52a8|call|open))?cameraagent",
+    "flags": ""
+  },
+  "camera.politePrefix": {
+    "source": "^\u8bf7",
+    "flags": ""
+  },
+  "camera.recenter": {
+    "source": "^(?:(?:\u628a|\u5c06)?(?:\u76f8\u673a)?(?:\u9884\u89c8\u5c4f|\u9884\u89c8\u7a97\u53e3|\u76d1\u89c6\u5c4f)(?:\u79fb\u5230|\u653e\u5230|\u53ec\u56de\u5230)(?:\u6211|\u7528\u6237)(?:\u7684)?(?:\u9762\u524d|\u6b63\u524d\u65b9)|(?:\u590d\u4f4d|\u91cd\u7f6e|\u53ec\u56de)(?:\u76f8\u673a)?(?:\u9884\u89c8\u5c4f|\u9884\u89c8\u7a97\u53e3|\u76d1\u89c6\u5c4f)|(?:\u9884\u89c8\u5c4f|\u9884\u89c8\u7a97\u53e3|\u76d1\u89c6\u5c4f)\u590d\u4f4d)$",
+    "flags": ""
+  },
+  "camera.preview": {
+    "source": "^(?:\u9884\u89c8|\u67e5\u770b|\u770b\u4e00\u4e0b|\u770b\u770b|\u6253\u5f00)(?:\u5f53\u524d|\u8fd9\u4e2a|\u5df2\u4fdd\u5b58\u7684)?(?:\u76f8\u673a|\u673a\u4f4d|\u955c\u5934)(?:\u753b\u9762|\u89c6\u91ce|\u62cd\u6444\u5185\u5bb9)?$",
+    "flags": ""
+  },
+  "camera.framingQuestion": {
+    "source": "^(?:\u5f53\u524d|\u8fd9\u4e2a)?\u76f8\u673a\u80fd\u62cd\u5230\u4ec0\u4e48(?:\u5185\u5bb9)?$",
+    "flags": ""
+  },
+  "camera.next": {
+    "source": "^(?:\u67e5\u770b|\u5207\u6362\u5230|\u5207\u6362)?(?:\u4e0b\u4e00\u4e2a|\u4e0b\u4e00\u53f0|\u4e0b\u4e2a)(?:\u76f8\u673a|\u673a\u4f4d|\u955c\u5934)$",
+    "flags": ""
+  },
+  "camera.previous": {
+    "source": "^(?:\u67e5\u770b|\u5207\u6362\u5230|\u5207\u6362)?(?:\u4e0a\u4e00\u4e2a|\u4e0a\u4e00\u53f0|\u4e0a\u4e2a)(?:\u76f8\u673a|\u673a\u4f4d|\u955c\u5934)$",
+    "flags": ""
+  },
+  "camera.close": {
+    "source": "^(?:\u5173\u95ed|\u6536\u8d77)(?:\u76f8\u673a\u9884\u89c8|\u76f8\u673a\u753b\u9762|\u76f8\u673a\u89c6\u91ce|\u76f8\u673a\u76d1\u89c6\u5c4f|\u76d1\u89c6\u5c4f)$",
+    "flags": ""
+  },
+  "punctuation.camera-view-intent.1": {
+    "source": "[\uff0c,\u3002.!\uff01?\uff1f\uff1a:\\s]+",
+    "flags": "g"
+  },
+  "specialist.flow": {
+    "source": "\u8840\u6c34|\u6d2a\u6c34|\u6d41\u4f53|\u6db2\u4f53|\u6ea2\u51fa|\u6d8c\u51fa|\u51fa\u6d41|\u6d41\u91cf|\u6f0f\u6c34|\u51fa\u6c34|\u55b7\u6c34|\u6c34\u6d41|water.*flow|flow.*water|\\b(flood|blood|fluid|overflow|spill|leak)\\b",
+    "flags": "i"
+  },
+  "specialist.flowAdjustment": {
+    "source": "\u6e90\u533a|\u5e95\u90e8|\u5de6\u4fa7|\u505c\u7559|\\b(source|amount|bottom|dwell)\\b",
+    "flags": "i"
+  },
+  "specialist.path": {
+    "source": "\u66f2\u7ebf|\u8f68\u8ff9|\u6cbf\u7ebf|\u8def\u7ebf|\u8f68\u9053|path|curve|trajectory",
+    "flags": "i"
+  },
+  "specialist.camera": {
+    "source": "\u76f8\u673a|camera|\u673a\u4f4d|\u955c\u5934|\u8fd0\u955c",
+    "flags": "i"
+  },
+  "specialist.lighting": {
+    "source": "\u706f\u5149|\u70b9\u5149|\u805a\u5149|\u5149\u6e90|light|\u4eae\u5ea6",
+    "flags": "i"
+  },
+  "specialist.trigger": {
+    "source": "\u89e6\u53d1|\u8303\u56f4|\u533a\u57df|\u5708|trigger|region|zone",
+    "flags": "i"
+  },
+  "specialist.motionAdjustment": {
+    "source": "\u5feb|\u6162|\u79d2|\u65f6\u957f|\u901f\u5ea6|\u505c|\u671d\u5411|\u8f6c\u5411|\u65b9\u5411|speed|duration|delay|orientation",
+    "flags": "i"
+  },
+  "specialist.objectEdit": {
+    "source": "\u62c9\u76f4|\u63a7\u5236\u70b9|\u65b9\u5757|\u7acb\u65b9\u4f53|\u521b\u5efa\u7269|\u5220\u9664|\u79fb\u9664|cube|box",
+    "flags": "i"
+  },
+  "ui.legacyText": {
+    "source": "[\\p{Script=Han}\uff1a\uff0c\uff1b\u3002\uff01\uff1f\u3001]+",
+    "flags": "gu"
+  }
+}

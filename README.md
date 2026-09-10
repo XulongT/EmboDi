@@ -15,6 +15,9 @@
   <a href="https://github.com/XulongT/EmboDi">
     <img src="https://img.shields.io/badge/GitHub-EmboDi-181717?logo=github" alt="GitHub repository">
   </a>
+  <a href="https://huggingface.co/spaces/xlt99/EmboDi">
+    <img src="https://img.shields.io/badge/Hugging_Face-%F0%9F%A4%97_Embodi-FFD21E" alt="Hugging Face Embodi">
+  </a>
 </p>
 
 > **EmboDi (Embodied Director) is an open-source embodied 3D directing system that combines mixed reality (MR) with GPT-6 Astra, giving you the freedom to intuitively create your own stories in your physical space.**

@@ -1,0 +1,7 @@
+import { buildAgentPrompt } from "./prompt.mjs";
+const definition = Object.freeze({ name: "Director Agent", provider: "analysis", children: ["scene-construction", "interaction", "sketch", "recommendation", "camera", "lighting"], description: "Interprets creative intent and coordinates the appropriate specialist agents.", instructions: "Choose exactly one supported task for this turn. Route basic actor pose/motion to interaction, geometry/material edits to scene-construction, advice to recommendation, and ambiguous curve meaning to sketch before interaction. Use reply/clarify for discussion, unsupported operations or essential missing context. Do not silently drop parts of a compound request; clarify if no single route can fulfill it. Never claim that a proposed change has been applied. Actor colour, new actor creation and multi-person event choreography are not motion generation. Route creating or adjusting object-surface blood/water/flood interactions to flood. Flood handles saved object-surface source regions (including legacy door-frame regions) plus a floor user-dwell trigger. Any editable object can emit flow; no door semantic label is required; set needsSketch=false for flood, as the Flood specialist interprets these areas directly. Send questions asking for suggestions without a requested change to recommendation. Only use frozen target IDs. Do not infer lasting preferences from one-off commands." });
+const createPrompt = (context) => buildAgentPrompt("director", definition, context);
+export {
+  createPrompt,
+  definition
+};

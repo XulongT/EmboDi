@@ -1,0 +1,15 @@
+import http from "node:http";
+import { fileURLToPath } from "node:url";
+import { startQuestLink } from "../services/quest-link.mjs";
+import { createContext } from "./context.mjs";
+import { createHandler } from "./handler.mjs";
+const root = fileURLToPath(new URL("../../", import.meta.url));
+const context = await createContext(root);
+const handler = createHandler(context);
+const port = Number(process.env.PORT || 8080);
+context.questLink = process.env.VRBUILD_EDITION === "open-source" ? startQuestLink({ data: context.data, port }) : null;
+const server = http.createServer(handler);
+server.listen(port, "127.0.0.1", () => console.log("EmboDi ready: http://127.0.0.1:" + server.address().port + "\nScene data: " + context.data));
+const ipv6 = http.createServer(handler);
+ipv6.on("error", (error) => console.warn("IPv6 loopback unavailable:", error.code));
+ipv6.listen(port, "::1", () => console.log("IPv6 loopback ready: http://[::1]:" + port));
